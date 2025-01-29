@@ -11,13 +11,14 @@ body {
     background-color: #a2d2ff;
 }
 #container {
-background-color: #bde0fe;
+background-color: rgba(35, 35, 35, 0.3);
 width: 500px;
 padding-left: 140px;
 height: 600px;
 margin-top: 50px;
 border-radius: 30px;
 border: none;
+
 }
 #search {
     padding-top: 30px;
