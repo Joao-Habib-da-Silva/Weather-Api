@@ -2,7 +2,7 @@ async function Search() {
     try {
         const city = window.document.getElementById("value").value.toLowerCase()
         
-        const link = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=13ac5de8ccec4877bc03cf12a129e107&lang=pt_br&units=metric`)
+        const link = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&lang=pt_br&units=metric`)
         if(!link.ok) {
           throw new Error("Error no fetch, tente novamente")  
         }

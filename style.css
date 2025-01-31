@@ -18,10 +18,12 @@ height: 600px;
 margin-top: 50px;
 border-radius: 30px;
 border: none;
+box-shadow: 0px 0px 20px #023eb7;
 
 }
 #search {
     padding-top: 30px;
+
 }
 #value {
     margin-top:20px;
@@ -51,7 +53,7 @@ button:hover {
 }
 #content {
     margin-top: 20px;
-   
+   display: flex;
 }
 #img {
     margin-top: 20px;
@@ -59,15 +61,60 @@ button:hover {
 #cityname {
     font-weight: 600;
     font-size: x-large;
-    padding-left: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -140px;
 }
 #temps {
-    display: flex;
-    padding-left: 5px;
+
+justify-content: center;
+display: flex;
+margin-left: -140px;
     margin-top: 50px;
     font-weight: 600;
     font-size: xx-large;
 }
 #temp {
     margin-right: 20px;
+}
+@media(max-width:400px) {
+    #container {
+        width: 380px;
+        height: 400px;
+        padding-left: 0;
+        margin-top: 130px;
+    }
+    #search {
+        justify-content: center;
+    display: flex;
+    }
+    #cityname {
+        padding-left: 0;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    #value {
+        width: 150px;
+        height: 45px;
+        margin-top: 5px;
+    }
+    #cityname {
+        font-size: large;
+        font-weight: 700;  
+        justify-content: center;
+    }
+
+    #image {
+        width: 150px;
+        height: 150px;
+        margin-left: 110px;
+    }
+    #temps {
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+    margin-left: 0;
+    margin-top: -1px;
+    }
 }
